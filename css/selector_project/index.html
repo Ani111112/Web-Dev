@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+
+        /* Global Selector */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Type Selector */
+        h1 {
+            color: blueviolet;
+        }
+
+        /* Class Selector */
+        p.highlight {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Id Selector */
+        #intro {
+            background-color: orange
+        }
+
+        /* Lebel Selector */
+        label[for=email] {
+            background-color: red;
+        }
+
+        input[type="text"] {
+            border: 2px solid blueviolet
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to CSS Selector Practice</h1>
+
+  <p id="intro">This is an introduction paragraph with an ID.</p>
+  <p class="highlight">This is a paragraph with a class.</p>
+  <p>This is a regular paragraph.</p>
+
+  <div class="container">
+    <p>This paragraph is inside a container.</p>
+    <span>This span is a direct child of the container.</span>
+    <div>
+      <p>This paragraph is nested deeper inside another div.</p>
+    </div>
+  </div>
+
+  <ul>
+    <li>First Item</li>
+    <li class="highlight">Second Item</li>
+    <li>Third Item</li>
+    <li class="special">Fourth Item</li>
+  </ul>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+  </form>
+
+  <a href="#">This is a link</a>
+  <a href="#" class="btn">This is a button-like link</a>
+</body>
+</html>
