@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project_navbar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(42, 41, 41);
+        }
+        
+        .navbar {
+            background-color: rgb(8, 185, 8);
+            height: 150px;
+            width: 200px;
+            padding: 4px;
+            margin: 4px;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            padding: 2px;
+            margin : 1px;
+        }
+
+        .navbar .nav-links li {
+            margin-bottom: 4px;
+            width: 100%;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .nav-links a:hover {
+            background-color: rgb(6, 152, 6);
+        }
+
+        .navbar .nav-buttons {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .navbar .nav-buttons .login-btn {
+            margin-right: 6px;
+            border: none;
+            border-radius: 2px;
+            padding: 5px;
+        }
+
+        .navbar .nav-buttons .signup-btn {
+            border: none;
+            border-radius: 2px;
+            padding: 5px;
+        }
+        
+        .navbar .nav-buttons .login-btn:hover {
+            cursor: pointer;
+            background-color: rgb(171, 167, 167);
+        }
+
+        .navbar .nav-buttons .signup-btn:hover {
+            cursor: pointer;
+            background-color: rgb(171, 167, 167);
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav-buttons">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+  </nav>
+</body>
+</html>
