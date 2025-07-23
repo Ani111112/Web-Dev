@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        border: black solid 2px;
+      }
+
+      .nav-container {
+        background-color: rgb(11, 153, 11);
+        padding: 8px;
+      }
+
+      .nav-container h2{
+        text-align: center;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 4px;
+        display: block;
+      }
+
+      .navbar .dropdown-content {
+        display: none;
+      }
+
+      .navbar .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: rgb(11, 153, 11);
+        min-width: 120px;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(58, 60, 58);
+      }
+
+      .navbar .dropdown .dropdown-content a:hover {
+        background-color: rgb(8, 116, 8);
+      }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+      <h2>Nav Bar with Dropdown</h2>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </li>
+          <li><a href="#">Product</a></li>
+        </ul>
+      </nav>
+    </div>
+</body>
+</html>
